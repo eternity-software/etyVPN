@@ -3,7 +3,7 @@
  * Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
  */
 
-package de.blinkt.openvpn.fragments;
+package ru.oig.etyvpn.fragments;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -14,10 +14,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.*;
 import android.widget.AdapterView.OnItemSelectedListener;
-import de.blinkt.openvpn.R;
-import de.blinkt.openvpn.R.id;
-import de.blinkt.openvpn.VpnProfile;
-import de.blinkt.openvpn.views.FileSelectLayout;
+import ru.oig.etyvpn.R;
+import ru.oig.etyvpn.R.id;
+import ru.oig.etyvpn.VpnProfile;
+import ru.oig.etyvpn.views.FileSelectLayout;
 
 public class Settings_Basic extends KeyChainSettingsFragment implements OnItemSelectedListener, FileSelectLayout.FileSelectCallback, CompoundButton.OnCheckedChangeListener {
     private static final int CHOOSE_FILE_OFFSET = 1000;

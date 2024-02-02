@@ -3,7 +3,7 @@
  * Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
  */
 
-package de.blinkt.openvpn.fragments;
+package ru.oig.etyvpn.fragments;
 
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
@@ -13,9 +13,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import de.blinkt.openvpn.R;
-import de.blinkt.openvpn.VpnProfile;
-import de.blinkt.openvpn.api.AppRestrictions;
+import ru.oig.etyvpn.R;
+import ru.oig.etyvpn.VpnProfile;
+import ru.oig.etyvpn.api.AppRestrictions;
 
 public class Settings_UserEditable extends KeyChainSettingsFragment implements View.OnClickListener {
 

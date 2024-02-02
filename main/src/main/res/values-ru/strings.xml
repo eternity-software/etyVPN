@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2012-2024 Arne Schwabe
+  ~ Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
+  -->
+
+<resources>
+    <string name="app">etyVPN</string>
+    <string name="select">Выбрать</string>
+    <string name="vpn_launch_title">Подулючение...</string>
+    <string name="cancel_connection">Отключиться</string>
+    <string name="cancel_connection_long">Отключиться</string>
+    <string name="remove_vpn">Удалить VPN</string>
+    <string name="state_connecting">Соединение...</string>
+    <string name="state_wait">Ожидание ответа сервера...</string>
+    <string name="state_auth">Авторизация...</string>
+    <string name="state_get_config">Получение конфигурации...</string>
+    <string name="state_assign_ip">Присваивание адреса...</string>
+    <string name="state_add_routes">Добавление узлов...</string>
+    <string name="state_connected">Подключено</string>
+    <string name="state_disconnected">Отключено</string>
+    <string name="state_reconnecting">Переподключение</string>
+    <string name="state_exiting">Выход...</string>
+    <string name="state_noprocess">Не запущено</string>
+    <string name="state_resolve">Поиск имен серверов...</string>
+    <string name="state_tcp_connect">Подключение (TCP)</string>
+    <string name="state_auth_failed">Ошибка аунтентификации</string>
+    <string name="state_nonetwork">Ожидание сети</string>
+    <string name="notifcation_title_notconnect">Не подключено</string>
+    <string name="start_vpn_title">Подключение к VPN %s</string>
+    <string name="start_vpn_ticker">Подключение к VPN %s</string>
+    <string name="pauseVPN">Пауза</string>
+    <string name="resumevpn">Возобновить</string>
+    <string name="notifcation_title">etyVPN запущен</string>
+    <string name="building_configration">Создание конфигурации…</string>
+</resources>

@@ -3,7 +3,7 @@
  * Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
  */
 
-package de.blinkt.openvpn.fragments;
+package ru.oig.etyvpn.fragments;
 
 import android.content.Context;
 import android.content.res.Configuration;
@@ -37,13 +37,13 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Locale;
 
-import de.blinkt.openvpn.R;
-import de.blinkt.openvpn.core.OpenVPNManagement;
-import de.blinkt.openvpn.core.TrafficHistory;
-import de.blinkt.openvpn.core.VpnStatus;
+import ru.oig.etyvpn.R;
+import ru.oig.etyvpn.core.OpenVPNManagement;
+import ru.oig.etyvpn.core.TrafficHistory;
+import ru.oig.etyvpn.core.VpnStatus;
 
 import static android.content.Context.MODE_PRIVATE;
-import static de.blinkt.openvpn.core.OpenVPNService.humanReadableByteCount;
+import static ru.oig.etyvpn.core.OpenVPNService.humanReadableByteCount;
 import static java.lang.Math.max;
 
 /**

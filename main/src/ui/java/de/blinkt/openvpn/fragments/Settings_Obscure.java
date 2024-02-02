@@ -3,7 +3,7 @@
  * Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
  */
 
-package de.blinkt.openvpn.fragments;
+package ru.oig.etyvpn.fragments;
 
 import android.os.Bundle;
 import android.widget.Toast;
@@ -16,8 +16,8 @@ import androidx.preference.Preference;
 
 import java.util.Locale;
 
-import de.blinkt.openvpn.R;
-import de.blinkt.openvpn.VpnProfile;
+import ru.oig.etyvpn.R;
+import ru.oig.etyvpn.VpnProfile;
 
 public class Settings_Obscure extends OpenVpnPreferencesFragment implements Preference.OnPreferenceChangeListener {
 	private CheckBoxPreference mUseRandomHostName;

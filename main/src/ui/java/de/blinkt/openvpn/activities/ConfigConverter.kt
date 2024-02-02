@@ -3,7 +3,7 @@
  * Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
  */
 
-package de.blinkt.openvpn.activities
+package ru.oig.etyvpn.activities
 
 import android.Manifest
 import android.annotation.TargetApi
@@ -28,14 +28,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.*
 import androidx.lifecycle.lifecycleScope
-import de.blinkt.openvpn.R
-import de.blinkt.openvpn.VpnProfile
-import de.blinkt.openvpn.core.ConfigParser
-import de.blinkt.openvpn.core.ConfigParser.ConfigParseError
-import de.blinkt.openvpn.core.ProfileManager
-import de.blinkt.openvpn.fragments.Utils
-import de.blinkt.openvpn.views.FileSelectLayout
-import de.blinkt.openvpn.views.FileSelectLayout.FileSelectCallback
+import ru.oig.etyvpn.R
+import ru.oig.etyvpn.VpnProfile
+import ru.oig.etyvpn.core.ConfigParser
+import ru.oig.etyvpn.core.ConfigParser.ConfigParseError
+import ru.oig.etyvpn.core.ProfileManager
+import ru.oig.etyvpn.fragments.Utils
+import ru.oig.etyvpn.views.FileSelectLayout
+import ru.oig.etyvpn.views.FileSelectLayout.FileSelectCallback
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -886,8 +886,8 @@ class ConfigConverter : BaseActivity(), FileSelectCallback, View.OnClickListener
     companion object {
 
         @kotlin.jvm.JvmField
-        val IMPORT_PROFILE = "de.blinkt.openvpn.IMPORT_PROFILE"
-        val IMPORT_PROFILE_DATA = "de.blinkt.openvpn.IMPORT_PROFILE_DATA"
+        val IMPORT_PROFILE = "ru.oig.etyvpn.IMPORT_PROFILE"
+        val IMPORT_PROFILE_DATA = "ru.oig.etyvpn.IMPORT_PROFILE_DATA"
         private val RESULT_INSTALLPKCS12 = 7
         private val CHOOSE_FILE_OFFSET = 1000
         val VPNPROFILE = "vpnProfile"

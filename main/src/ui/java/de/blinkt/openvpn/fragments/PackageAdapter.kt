@@ -3,7 +3,7 @@
  * Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
  */
 
-package de.blinkt.openvpn.fragments
+package ru.oig.etyvpn.fragments
 
 import android.Manifest
 import android.app.Activity
@@ -16,8 +16,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.*
 import androidx.recyclerview.widget.RecyclerView
-import de.blinkt.openvpn.R
-import de.blinkt.openvpn.VpnProfile
+import ru.oig.etyvpn.R
+import ru.oig.etyvpn.VpnProfile
 import java.util.*
 
 internal class AppViewHolder(var rootView : View) : RecyclerView.ViewHolder(rootView) {

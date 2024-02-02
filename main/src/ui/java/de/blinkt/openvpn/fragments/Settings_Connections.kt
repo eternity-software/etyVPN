@@ -2,7 +2,7 @@
  * Copyright (c) 2012-2016 Arne Schwabe
  * Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
  */
-package de.blinkt.openvpn.fragments
+package ru.oig.etyvpn.fragments
 
 import android.os.Build
 import android.os.Bundle
@@ -10,11 +10,11 @@ import android.view.*
 import android.widget.Checkable
 import android.widget.ImageButton
 import android.widget.TextView
-import de.blinkt.openvpn.fragments.Settings_Fragment
-import de.blinkt.openvpn.fragments.ConnectionsAdapter
+import ru.oig.etyvpn.fragments.Settings_Fragment
+import ru.oig.etyvpn.fragments.ConnectionsAdapter
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.LinearLayoutManager
-import de.blinkt.openvpn.R
+import ru.oig.etyvpn.R
 
 class Settings_Connections : Settings_Fragment(), View.OnClickListener {
     private lateinit var mConnectionsAdapter: ConnectionsAdapter

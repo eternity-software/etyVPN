@@ -3,7 +3,7 @@
  * Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
  */
 
-package de.blinkt.openvpn.fragments;
+package ru.oig.etyvpn.fragments;
 import android.os.Build;
 import android.os.Bundle;
 
@@ -11,7 +11,7 @@ import androidx.preference.CheckBoxPreference;
 import androidx.preference.EditTextPreference;
 import androidx.preference.Preference;
 
-import de.blinkt.openvpn.R;
+import ru.oig.etyvpn.R;
 
 
 public class Settings_Routing extends OpenVpnPreferencesFragment implements Preference.OnPreferenceChangeListener {

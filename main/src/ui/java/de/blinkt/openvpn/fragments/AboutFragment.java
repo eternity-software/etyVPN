@@ -3,7 +3,7 @@
  * Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
  */
 
-package de.blinkt.openvpn.fragments;
+package ru.oig.etyvpn.fragments;
 
 import android.app.PendingIntent;
 import android.content.ComponentName;
@@ -31,8 +31,8 @@ import androidx.fragment.app.Fragment;
 
 import com.android.vending.billing.IInAppBillingService;
 
-import de.blinkt.openvpn.BuildConfig;
-import de.blinkt.openvpn.core.NativeUtils;
+import ru.oig.etyvpn.BuildConfig;
+import ru.oig.etyvpn.core.NativeUtils;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -44,8 +44,8 @@ import java.util.Hashtable;
 import java.util.Locale;
 import java.util.Vector;
 
-import de.blinkt.openvpn.R;
-import de.blinkt.openvpn.core.VpnStatus;
+import ru.oig.etyvpn.R;
+import ru.oig.etyvpn.core.VpnStatus;
 import kotlin.text.Charsets;
 
 public class AboutFragment extends Fragment implements View.OnClickListener {

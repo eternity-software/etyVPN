@@ -3,7 +3,7 @@
  * Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
  */
 
-package de.blinkt.openvpn.fragments;
+package ru.oig.etyvpn.fragments;
 
 import android.Manifest;
 import android.annotation.TargetApi;
@@ -52,23 +52,23 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.TreeSet;
 
-import de.blinkt.openvpn.LaunchVPN;
-import de.blinkt.openvpn.R;
-import de.blinkt.openvpn.VpnProfile;
-import de.blinkt.openvpn.activities.ConfigConverter;
-import de.blinkt.openvpn.activities.DisconnectVPN;
-import de.blinkt.openvpn.activities.FileSelect;
-import de.blinkt.openvpn.activities.VPNPreferences;
-import de.blinkt.openvpn.core.ConnectionStatus;
-import de.blinkt.openvpn.core.PasswordDialogFragment;
-import de.blinkt.openvpn.core.Preferences;
-import de.blinkt.openvpn.core.ProfileManager;
-import de.blinkt.openvpn.core.VpnStatus;
+import ru.oig.etyvpn.LaunchVPN;
+import ru.oig.etyvpn.R;
+import ru.oig.etyvpn.VpnProfile;
+import ru.oig.etyvpn.activities.ConfigConverter;
+import ru.oig.etyvpn.activities.DisconnectVPN;
+import ru.oig.etyvpn.activities.FileSelect;
+import ru.oig.etyvpn.activities.VPNPreferences;
+import ru.oig.etyvpn.core.ConnectionStatus;
+import ru.oig.etyvpn.core.PasswordDialogFragment;
+import ru.oig.etyvpn.core.Preferences;
+import ru.oig.etyvpn.core.ProfileManager;
+import ru.oig.etyvpn.core.VpnStatus;
 
-import static de.blinkt.openvpn.core.ConnectionStatus.LEVEL_WAITING_FOR_USER_INPUT;
-import static de.blinkt.openvpn.core.OpenVPNService.DISCONNECT_VPN;
-import static de.blinkt.openvpn.core.OpenVPNService.EXTRA_CHALLENGE_TXT;
-import static de.blinkt.openvpn.core.OpenVPNService.EXTRA_START_REASON;
+import static ru.oig.etyvpn.core.ConnectionStatus.LEVEL_WAITING_FOR_USER_INPUT;
+import static ru.oig.etyvpn.core.OpenVPNService.DISCONNECT_VPN;
+import static ru.oig.etyvpn.core.OpenVPNService.EXTRA_CHALLENGE_TXT;
+import static ru.oig.etyvpn.core.OpenVPNService.EXTRA_START_REASON;
 
 
 public class VPNProfileList extends ListFragment implements OnClickListener, VpnStatus.StateListener {

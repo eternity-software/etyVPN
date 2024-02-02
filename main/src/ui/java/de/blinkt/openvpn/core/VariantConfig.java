@@ -3,12 +3,12 @@
  * Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
  */
 
-package de.blinkt.openvpn.core;
+package ru.oig.etyvpn.core;
 
 import android.content.Context;
 import android.content.Intent;
 
-import de.blinkt.openvpn.activities.InternalWebView;
+import ru.oig.etyvpn.activities.InternalWebView;
 
 public class VariantConfig {
     /** Return the normal webview or internal webview depending what is available */

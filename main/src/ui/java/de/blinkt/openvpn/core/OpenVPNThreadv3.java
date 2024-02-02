@@ -1,4 +1,4 @@
-package de.blinkt.openvpn.core;
+package ru.oig.etyvpn.core;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -23,10 +23,10 @@ import net.openvpn.ovpn3.ClientAPI_TransportStats;
 
 import java.util.Locale;
 
-import de.blinkt.openvpn.R;
-import de.blinkt.openvpn.VpnProfile;
+import ru.oig.etyvpn.R;
+import ru.oig.etyvpn.VpnProfile;
 
-import static de.blinkt.openvpn.VpnProfile.AUTH_RETRY_NOINTERACT;
+import static ru.oig.etyvpn.VpnProfile.AUTH_RETRY_NOINTERACT;
 
 import androidx.annotation.NonNull;
 

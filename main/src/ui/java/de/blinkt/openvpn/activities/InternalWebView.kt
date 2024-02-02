@@ -3,7 +3,7 @@
  * Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
  */
 
-package de.blinkt.openvpn.activities
+package ru.oig.etyvpn.activities
 
 import android.annotation.SuppressLint
 import android.annotation.TargetApi
@@ -18,8 +18,8 @@ import android.webkit.WebViewClient
 import android.widget.TextView
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
-import de.blinkt.openvpn.R
-import de.blinkt.openvpn.VpnProfile
+import ru.oig.etyvpn.R
+import ru.oig.etyvpn.VpnProfile
 import org.json.JSONObject
 
 class InternalWebView : AppCompatActivity() {

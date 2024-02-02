@@ -3,7 +3,7 @@
  * Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
  */
 
-package de.blinkt.openvpn.views;
+package ru.oig.etyvpn.views;
 
 import android.content.Context;
 import android.content.Intent;
@@ -17,12 +17,12 @@ import android.widget.TextView;
 
 import java.io.IOException;
 
-import de.blinkt.openvpn.R;
-import de.blinkt.openvpn.VpnProfile;
-import de.blinkt.openvpn.activities.FileSelect;
-import de.blinkt.openvpn.core.VpnStatus;
-import de.blinkt.openvpn.core.X509Utils;
-import de.blinkt.openvpn.fragments.Utils;
+import ru.oig.etyvpn.R;
+import ru.oig.etyvpn.VpnProfile;
+import ru.oig.etyvpn.activities.FileSelect;
+import ru.oig.etyvpn.core.VpnStatus;
+import ru.oig.etyvpn.core.X509Utils;
+import ru.oig.etyvpn.fragments.Utils;
 
 import static android.os.Build.VERSION;
 import static android.os.Build.VERSION_CODES;

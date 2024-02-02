@@ -3,7 +3,7 @@
  * Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
  */
 
-package de.blinkt.openvpn;
+package ru.oig.etyvpn;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
@@ -18,12 +18,12 @@ import android.service.quicksettings.Tile;
 import android.service.quicksettings.TileService;
 import android.widget.Toast;
 
-import de.blinkt.openvpn.core.ConnectionStatus;
-import de.blinkt.openvpn.core.IOpenVPNServiceInternal;
-import de.blinkt.openvpn.core.OpenVPNService;
-import de.blinkt.openvpn.core.ProfileManager;
-import de.blinkt.openvpn.core.VPNLaunchHelper;
-import de.blinkt.openvpn.core.VpnStatus;
+import ru.oig.etyvpn.core.ConnectionStatus;
+import ru.oig.etyvpn.core.IOpenVPNServiceInternal;
+import ru.oig.etyvpn.core.OpenVPNService;
+import ru.oig.etyvpn.core.ProfileManager;
+import ru.oig.etyvpn.core.VPNLaunchHelper;
+import ru.oig.etyvpn.core.VpnStatus;
 
 
 /**

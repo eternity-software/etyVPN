@@ -3,7 +3,7 @@
  * Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
  */
 
-package de.blinkt.openvpn.fragments;
+package ru.oig.etyvpn.fragments;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -17,9 +17,9 @@ import android.widget.*;
 
 import java.util.Arrays;
 
-import de.blinkt.openvpn.R;
-import de.blinkt.openvpn.VpnProfile;
-import de.blinkt.openvpn.core.Connection;
+import ru.oig.etyvpn.R;
+import ru.oig.etyvpn.VpnProfile;
+import ru.oig.etyvpn.core.Connection;
 
 public class ConnectionsAdapter extends RecyclerView.Adapter<ConnectionsAdapter.ConnectionsHolder> {
     private static final int TYPE_NORMAL = 0;

@@ -2,14 +2,14 @@
  * Copyright (c) 2012-2016 Arne Schwabe
  * Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
  */
-package de.blinkt.openvpn.fragments
+package ru.oig.etyvpn.fragments
 
 import android.os.Bundle
 import android.view.View
 import androidx.preference.*
-import de.blinkt.openvpn.R
-import de.blinkt.openvpn.fragments.OpenVpnPreferencesFragment
-import de.blinkt.openvpn.VpnProfile
+import ru.oig.etyvpn.R
+import ru.oig.etyvpn.fragments.OpenVpnPreferencesFragment
+import ru.oig.etyvpn.VpnProfile
 
 class Settings_IP : OpenVpnPreferencesFragment(), Preference.OnPreferenceChangeListener {
     private lateinit var mIPv4: EditTextPreference

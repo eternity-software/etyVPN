@@ -2,7 +2,7 @@
  * Copyright (c) 2012-2016 Arne Schwabe
  * Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
  */
-package de.blinkt.openvpn.fragments
+package ru.oig.etyvpn.fragments
 
 import android.app.Dialog
 import android.content.ActivityNotFoundException
@@ -17,12 +17,12 @@ import android.provider.Settings
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.preference.*
-import de.blinkt.openvpn.BuildConfig
-import de.blinkt.openvpn.R
-import de.blinkt.openvpn.activities.OpenSSLSpeed
-import de.blinkt.openvpn.api.ConfirmDialog.ANONYMOUS_PACKAGE
-import de.blinkt.openvpn.api.ExternalAppDatabase
-import de.blinkt.openvpn.core.ProfileManager
+import ru.oig.etyvpn.BuildConfig
+import ru.oig.etyvpn.R
+import ru.oig.etyvpn.activities.OpenSSLSpeed
+import ru.oig.etyvpn.api.ConfirmDialog.ANONYMOUS_PACKAGE
+import ru.oig.etyvpn.api.ExternalAppDatabase
+import ru.oig.etyvpn.core.ProfileManager
 import java.io.File
 
 class GeneralSettings : PreferenceFragmentCompat(), Preference.OnPreferenceClickListener,

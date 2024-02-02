@@ -3,7 +3,7 @@
  * Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
  */
 
-package de.blinkt.openvpn.views;
+package ru.oig.etyvpn.views;
 
 import android.os.Bundle;
 import android.util.Pair;
@@ -15,10 +15,10 @@ import android.widget.TextView;
 
 import androidx.preference.PreferenceDialogFragmentCompat;
 
-import de.blinkt.openvpn.R;
-import de.blinkt.openvpn.VpnProfile;
+import ru.oig.etyvpn.R;
+import ru.oig.etyvpn.VpnProfile;
 
-import static de.blinkt.openvpn.VpnProfile.X509_VERIFY_TLSREMOTE_COMPAT_NOREMAPPING;
+import static ru.oig.etyvpn.VpnProfile.X509_VERIFY_TLSREMOTE_COMPAT_NOREMAPPING;
 
 public class RemoteCNPreferenceDialog extends PreferenceDialogFragmentCompat {
     private Spinner mSpinner;

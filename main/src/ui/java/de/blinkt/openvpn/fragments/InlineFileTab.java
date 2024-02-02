@@ -3,7 +3,7 @@
  * Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
  */
 
-package de.blinkt.openvpn.fragments;
+package ru.oig.etyvpn.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -16,8 +16,8 @@ import android.widget.EditText;
 
 import androidx.fragment.app.Fragment;
 
-import de.blinkt.openvpn.activities.FileSelect;
-import de.blinkt.openvpn.R;
+import ru.oig.etyvpn.activities.FileSelect;
+import ru.oig.etyvpn.R;
 
 public class InlineFileTab extends Fragment
 {

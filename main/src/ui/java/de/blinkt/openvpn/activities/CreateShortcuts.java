@@ -3,9 +3,9 @@
  * Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
  */
 
-package de.blinkt.openvpn.activities;
+package ru.oig.etyvpn.activities;
 
-import static de.blinkt.openvpn.core.OpenVPNService.EXTRA_START_REASON;
+import static ru.oig.etyvpn.core.OpenVPNService.EXTRA_START_REASON;
 
 import android.app.ListActivity;
 import android.content.Intent;
@@ -17,10 +17,10 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
-import de.blinkt.openvpn.LaunchVPN;
-import de.blinkt.openvpn.R;
-import de.blinkt.openvpn.VpnProfile;
-import de.blinkt.openvpn.core.ProfileManager;
+import ru.oig.etyvpn.LaunchVPN;
+import ru.oig.etyvpn.R;
+import ru.oig.etyvpn.VpnProfile;
+import ru.oig.etyvpn.core.ProfileManager;
 
 import java.util.Collection;
 import java.util.Vector;

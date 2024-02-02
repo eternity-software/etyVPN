@@ -15,8 +15,9 @@ android {
     buildToolsVersion = "33.0.1"
     buildFeatures {
         aidl = true
+        viewBinding = true
     }
-    namespace = "de.blinkt.openvpn"
+    namespace = "ru.oig.etyvpn"
     compileSdk = 34
     //compileSdkPreview = "UpsideDownCake"
 
@@ -234,6 +235,8 @@ dependencies {
     // https://maven.google.com/web/index.html
     implementation(libs.androidx.annotation)
     implementation(libs.androidx.core.ktx)
+    implementation(libs.navigation.fragment)
+    implementation(libs.navigation.ui)
 
     uiImplementation(libs.android.view.material)
     uiImplementation(libs.androidx.appcompat)

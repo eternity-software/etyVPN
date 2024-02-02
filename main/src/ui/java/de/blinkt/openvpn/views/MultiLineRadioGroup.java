@@ -3,7 +3,7 @@
  * Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
  */
 
-package de.blinkt.openvpn.views;
+package ru.oig.etyvpn.views;
 
 import android.content.Context;
 import android.graphics.Rect;

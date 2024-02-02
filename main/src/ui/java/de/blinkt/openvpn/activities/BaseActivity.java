@@ -3,7 +3,7 @@
  * Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
  */
 
-package de.blinkt.openvpn.activities;
+package ru.oig.etyvpn.activities;
 
 import android.app.UiModeManager;
 import android.content.Context;
@@ -14,7 +14,7 @@ import android.view.Window;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import de.blinkt.openvpn.core.LocaleHelper;
+import ru.oig.etyvpn.core.LocaleHelper;
 
 public abstract class BaseActivity extends AppCompatActivity {
     boolean isAndroidTV() {

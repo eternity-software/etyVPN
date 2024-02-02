@@ -3,7 +3,7 @@
  * Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
  */
 
-package de.blinkt.openvpn.fragments
+package ru.oig.etyvpn.fragments
 
 import android.app.AlertDialog
 import android.app.Dialog
@@ -23,9 +23,9 @@ import android.widget.*
 import androidx.core.view.isInvisible
 import androidx.fragment.app.DialogFragment
 import androidx.lifecycle.lifecycleScope
-import de.blinkt.openvpn.R
-import de.blinkt.openvpn.activities.ConfigConverter
-import de.blinkt.openvpn.core.Preferences
+import ru.oig.etyvpn.R
+import ru.oig.etyvpn.activities.ConfigConverter
+import ru.oig.etyvpn.core.Preferences
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext

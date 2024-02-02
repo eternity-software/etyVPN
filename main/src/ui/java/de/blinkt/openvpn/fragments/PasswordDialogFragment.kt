@@ -2,7 +2,7 @@
  * Copyright (c) 2012-2019 Arne Schwabe
  * Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
  */
-package de.blinkt.openvpn.core
+package ru.oig.etyvpn.core
 
 import android.app.AlertDialog
 import android.app.Dialog
@@ -16,8 +16,8 @@ import android.os.RemoteException
 import android.text.InputType
 import android.widget.EditText
 import androidx.fragment.app.DialogFragment
-import de.blinkt.openvpn.R
-import de.blinkt.openvpn.core.OpenVPNService.EXTRA_CHALLENGE_TXT
+import ru.oig.etyvpn.R
+import ru.oig.etyvpn.core.OpenVPNService.EXTRA_CHALLENGE_TXT
 
 class PasswordDialogFragment : DialogFragment() {
     private var mService: IOpenVPNServiceInternal? = null

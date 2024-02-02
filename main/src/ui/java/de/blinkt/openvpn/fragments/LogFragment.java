@@ -3,7 +3,7 @@
  * Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
  */
 
-package de.blinkt.openvpn.fragments;
+package ru.oig.etyvpn.fragments;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -56,23 +56,23 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.Vector;
 
-import de.blinkt.openvpn.LaunchVPN;
-import de.blinkt.openvpn.R;
-import de.blinkt.openvpn.VpnProfile;
-import de.blinkt.openvpn.activities.DisconnectVPN;
-import de.blinkt.openvpn.activities.MainActivity;
-import de.blinkt.openvpn.activities.VPNPreferences;
-import de.blinkt.openvpn.core.ConnectionStatus;
-import de.blinkt.openvpn.core.OpenVPNManagement;
-import de.blinkt.openvpn.core.OpenVPNService;
-import de.blinkt.openvpn.core.Preferences;
-import de.blinkt.openvpn.core.ProfileManager;
-import de.blinkt.openvpn.core.VpnStatus;
-import de.blinkt.openvpn.core.LogItem;
-import de.blinkt.openvpn.core.VpnStatus.LogListener;
-import de.blinkt.openvpn.core.VpnStatus.StateListener;
+import ru.oig.etyvpn.LaunchVPN;
+import ru.oig.etyvpn.R;
+import ru.oig.etyvpn.VpnProfile;
+import ru.oig.etyvpn.activities.DisconnectVPN;
+import ru.oig.etyvpn.activities.MainActivity;
+import ru.oig.etyvpn.activities.VPNPreferences;
+import ru.oig.etyvpn.core.ConnectionStatus;
+import ru.oig.etyvpn.core.OpenVPNManagement;
+import ru.oig.etyvpn.core.OpenVPNService;
+import ru.oig.etyvpn.core.Preferences;
+import ru.oig.etyvpn.core.ProfileManager;
+import ru.oig.etyvpn.core.VpnStatus;
+import ru.oig.etyvpn.core.LogItem;
+import ru.oig.etyvpn.core.VpnStatus.LogListener;
+import ru.oig.etyvpn.core.VpnStatus.StateListener;
 
-import static de.blinkt.openvpn.core.OpenVPNService.humanReadableByteCount;
+import static ru.oig.etyvpn.core.OpenVPNService.humanReadableByteCount;
 
 public class LogFragment extends ListFragment implements StateListener, SeekBar.OnSeekBarChangeListener, RadioGroup.OnCheckedChangeListener, VpnStatus.ByteCountListener {
     private static final String LOGTIMEFORMAT = "logtimeformat";

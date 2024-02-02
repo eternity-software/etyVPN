@@ -3,7 +3,7 @@
  * Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
  */
 
-package de.blinkt.openvpn.activities;
+package ru.oig.etyvpn.activities;
 
 import android.annotation.TargetApi;
 import android.app.AlertDialog;
@@ -18,20 +18,20 @@ import android.widget.Toast;
 import androidx.appcompat.app.ActionBar;
 import androidx.viewpager.widget.ViewPager;
 
-import de.blinkt.openvpn.R;
-import de.blinkt.openvpn.VpnProfile;
-import de.blinkt.openvpn.core.ProfileManager;
-import de.blinkt.openvpn.fragments.Settings_Allowed_Apps;
-import de.blinkt.openvpn.fragments.Settings_Authentication;
-import de.blinkt.openvpn.fragments.Settings_Basic;
-import de.blinkt.openvpn.fragments.Settings_Connections;
-import de.blinkt.openvpn.fragments.Settings_IP;
-import de.blinkt.openvpn.fragments.Settings_Obscure;
-import de.blinkt.openvpn.fragments.Settings_Routing;
-import de.blinkt.openvpn.fragments.Settings_UserEditable;
-import de.blinkt.openvpn.fragments.ShowConfigFragment;
-import de.blinkt.openvpn.fragments.VPNProfileList;
-import de.blinkt.openvpn.views.ScreenSlidePagerAdapter;
+import ru.oig.etyvpn.R;
+import ru.oig.etyvpn.VpnProfile;
+import ru.oig.etyvpn.core.ProfileManager;
+import ru.oig.etyvpn.fragments.Settings_Allowed_Apps;
+import ru.oig.etyvpn.fragments.Settings_Authentication;
+import ru.oig.etyvpn.fragments.Settings_Basic;
+import ru.oig.etyvpn.fragments.Settings_Connections;
+import ru.oig.etyvpn.fragments.Settings_IP;
+import ru.oig.etyvpn.fragments.Settings_Obscure;
+import ru.oig.etyvpn.fragments.Settings_Routing;
+import ru.oig.etyvpn.fragments.Settings_UserEditable;
+import ru.oig.etyvpn.fragments.ShowConfigFragment;
+import ru.oig.etyvpn.fragments.VPNProfileList;
+import ru.oig.etyvpn.views.ScreenSlidePagerAdapter;
 
 
 public class VPNPreferences extends BaseActivity {

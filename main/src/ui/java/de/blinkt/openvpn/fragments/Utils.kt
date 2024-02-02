@@ -2,7 +2,7 @@
  * Copyright (c) 2012-2016 Arne Schwabe
  * Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
  */
-package de.blinkt.openvpn.fragments
+package ru.oig.etyvpn.fragments
 
 import android.annotation.TargetApi
 import android.content.Context
@@ -17,10 +17,10 @@ import android.text.TextUtils
 import android.text.style.ForegroundColorSpan
 import android.util.Base64
 import android.webkit.MimeTypeMap
-import de.blinkt.openvpn.R
+import ru.oig.etyvpn.R
 import kotlin.Throws
-import de.blinkt.openvpn.VpnProfile
-import de.blinkt.openvpn.core.Preferences
+import ru.oig.etyvpn.VpnProfile
+import ru.oig.etyvpn.core.Preferences
 import java.io.ByteArrayOutputStream
 import java.io.IOException
 import java.io.InputStream

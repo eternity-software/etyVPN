@@ -3,15 +3,15 @@
  * Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
  */
 
-package de.blinkt.openvpn.views;
+package ru.oig.etyvpn.views;
 
 import android.content.Context;
 import android.util.AttributeSet;
 
 import androidx.preference.ListPreference;
 
-import de.blinkt.openvpn.VpnProfile;
-import de.blinkt.openvpn.core.ProfileManager;
+import ru.oig.etyvpn.VpnProfile;
+import ru.oig.etyvpn.core.ProfileManager;
 
 import java.util.Collection;
 

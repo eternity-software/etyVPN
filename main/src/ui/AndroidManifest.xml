@@ -162,7 +162,7 @@
                 android:parentActivityName=".activities.MainActivity">
             <meta-data
                     android:name="android.support.PARENT_ACTIVITY"
-                    android:value="de.blinkt.openvpn.activities.MainActivity" />
+                    android:value="ru.oig.etyvpn.activities.MainActivity" />
         </activity>
 
 

@@ -2,7 +2,7 @@
  * Copyright (c) 2012-2016 Arne Schwabe
  * Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
  */
-package de.blinkt.openvpn.activities
+package ru.oig.etyvpn.activities
 
 import android.content.Intent
 import android.net.Uri
@@ -12,10 +12,10 @@ import android.view.MenuItem
 import android.widget.Toast
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
-import de.blinkt.openvpn.R
-import de.blinkt.openvpn.fragments.*
-import de.blinkt.openvpn.fragments.ImportRemoteConfig.Companion.newInstance
-import de.blinkt.openvpn.views.ScreenSlidePagerAdapter
+import ru.oig.etyvpn.R
+import ru.oig.etyvpn.fragments.*
+import ru.oig.etyvpn.fragments.ImportRemoteConfig.Companion.newInstance
+import ru.oig.etyvpn.views.ScreenSlidePagerAdapter
 
 class MainActivity : BaseActivity() {
     private lateinit var mPager: ViewPager

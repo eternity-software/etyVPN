@@ -3,7 +3,7 @@
  * Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
  */
 
-package de.blinkt.openvpn.fragments;
+package ru.oig.etyvpn.fragments;
 
 import android.os.Build;
 import android.os.Bundle;
@@ -31,8 +31,8 @@ import java.util.Locale;
 import java.util.TreeMap;
 import java.util.Vector;
 
-import de.blinkt.openvpn.R;
-import de.blinkt.openvpn.activities.FileSelect;
+import ru.oig.etyvpn.R;
+import ru.oig.etyvpn.activities.FileSelect;
 
 public class FileSelectionFragment extends ListFragment {
 

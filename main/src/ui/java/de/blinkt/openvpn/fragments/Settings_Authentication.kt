@@ -2,7 +2,7 @@
  * Copyright (c) 2012-2016 Arne Schwabe
  * Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
  */
-package de.blinkt.openvpn.fragments
+package ru.oig.etyvpn.fragments
 
 import android.app.Activity
 import android.content.Intent
@@ -14,15 +14,15 @@ import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.DialogFragment
 import androidx.preference.*
-import de.blinkt.openvpn.R
-import de.blinkt.openvpn.VpnProfile
-import de.blinkt.openvpn.activities.FileSelect
-import de.blinkt.openvpn.core.VpnStatus
-import de.blinkt.openvpn.fragments.Utils.alwaysUseOldFileChooser
-import de.blinkt.openvpn.fragments.Utils.getFilePickerIntent
-import de.blinkt.openvpn.fragments.Utils.getFilePickerResult
-import de.blinkt.openvpn.views.RemoteCNPreference
-import de.blinkt.openvpn.views.RemoteCNPreferenceDialog
+import ru.oig.etyvpn.R
+import ru.oig.etyvpn.VpnProfile
+import ru.oig.etyvpn.activities.FileSelect
+import ru.oig.etyvpn.core.VpnStatus
+import ru.oig.etyvpn.fragments.Utils.alwaysUseOldFileChooser
+import ru.oig.etyvpn.fragments.Utils.getFilePickerIntent
+import ru.oig.etyvpn.fragments.Utils.getFilePickerResult
+import ru.oig.etyvpn.views.RemoteCNPreference
+import ru.oig.etyvpn.views.RemoteCNPreferenceDialog
 import java.io.IOException
 
 class Settings_Authentication : OpenVpnPreferencesFragment(), Preference.OnPreferenceClickListener {

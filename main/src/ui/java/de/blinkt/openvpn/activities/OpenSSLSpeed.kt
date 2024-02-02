@@ -3,7 +3,7 @@
  * Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
  */
 
-package de.blinkt.openvpn.activities
+package ru.oig.etyvpn.activities
 
 import android.content.Context
 import android.os.AsyncTask
@@ -16,9 +16,9 @@ import android.widget.EditText
 import android.widget.ListView
 import android.widget.TextView
 import androidx.lifecycle.lifecycleScope
-import de.blinkt.openvpn.R
-import de.blinkt.openvpn.core.NativeUtils
-import de.blinkt.openvpn.core.OpenVPNService
+import ru.oig.etyvpn.R
+import ru.oig.etyvpn.core.NativeUtils
+import ru.oig.etyvpn.core.OpenVPNService
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext

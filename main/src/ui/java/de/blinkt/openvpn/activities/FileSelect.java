@@ -3,7 +3,7 @@
  * Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
  */
 
-package de.blinkt.openvpn.activities;
+package ru.oig.etyvpn.activities;
 
 
 import java.io.File;
@@ -29,18 +29,18 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.material.tabs.TabLayout;
 
-import de.blinkt.openvpn.R;
-import de.blinkt.openvpn.VpnProfile;
-import de.blinkt.openvpn.fragments.FileSelectionFragment;
-import de.blinkt.openvpn.fragments.InlineFileTab;
+import ru.oig.etyvpn.R;
+import ru.oig.etyvpn.VpnProfile;
+import ru.oig.etyvpn.fragments.FileSelectionFragment;
+import ru.oig.etyvpn.fragments.InlineFileTab;
 
 public class FileSelect extends BaseActivity {
 	public static final String RESULT_DATA = "RESULT_PATH";
 	public static final String START_DATA = "START_DATA";
 	public static final String WINDOW_TITLE = "WINDOW_TILE";
-	public static final String NO_INLINE_SELECTION = "de.blinkt.openvpn.NO_INLINE_SELECTION";
-	public static final String SHOW_CLEAR_BUTTON = "de.blinkt.openvpn.SHOW_CLEAR_BUTTON";
-	public static final String DO_BASE64_ENCODE = "de.blinkt.openvpn.BASE64ENCODE";
+	public static final String NO_INLINE_SELECTION = "ru.oig.etyvpn.NO_INLINE_SELECTION";
+	public static final String SHOW_CLEAR_BUTTON = "ru.oig.etyvpn.SHOW_CLEAR_BUTTON";
+	public static final String DO_BASE64_ENCODE = "ru.oig.etyvpn.BASE64ENCODE";
     private static final int PERMISSION_REQUEST = 23621;
 
     private FileSelectionFragment mFSFragment;

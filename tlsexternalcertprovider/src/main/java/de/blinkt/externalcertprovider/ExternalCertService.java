@@ -11,7 +11,7 @@ import android.os.Bundle;
 import android.os.IBinder;
 import android.os.RemoteException;
 import android.text.TextUtils;
-import de.blinkt.openvpn.api.ExternalCertificateProvider;
+import ru.oig.etyvpn.api.ExternalCertificateProvider;
 
 import javax.crypto.BadPaddingException;
 import javax.crypto.IllegalBlockSizeException;

@@ -30,7 +30,7 @@
             android:title="OpenVPN 3 Core"/>
 
 
-        <de.blinkt.openvpn.views.DefaultVPNListPreference
+        <ru.oig.etyvpn.views.DefaultVPNListPreference
             android:key="alwaysOnVpn"
             android:title="@string/defaultvpn"
             tools:summary="@string/defaultvpnsummary"

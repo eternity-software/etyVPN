@@ -2,13 +2,13 @@
  * Copyright (c) 2012-2019 Arne Schwabe
  * Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
  */
-package de.blinkt.openvpn.activities
+package ru.oig.etyvpn.activities
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.DialogFragment
-import de.blinkt.openvpn.core.PasswordDialogFragment.Companion.newInstance
+import ru.oig.etyvpn.core.PasswordDialogFragment.Companion.newInstance
 
 class CredentialsPopup : AppCompatActivity() {
     public override fun onCreate(savedInstanceState: Bundle?) {

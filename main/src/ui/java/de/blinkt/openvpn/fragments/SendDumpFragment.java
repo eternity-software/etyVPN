@@ -3,7 +3,7 @@
  * Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
  */
 
-package de.blinkt.openvpn.fragments;
+package ru.oig.etyvpn.fragments;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -24,8 +24,8 @@ import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 
-import de.blinkt.openvpn.R;
-import de.blinkt.openvpn.core.VpnStatus;
+import ru.oig.etyvpn.R;
+import ru.oig.etyvpn.core.VpnStatus;
 
 public class SendDumpFragment extends Fragment {
 
@@ -112,8 +112,8 @@ public class SendDumpFragment extends Fragment {
             return;
         }
 
-        uris.add(Uri.parse("content://de.blinkt.openvpn.FileProvider/" + ldump.first.getName()));
-        uris.add(Uri.parse("content://de.blinkt.openvpn.FileProvider/" + ldump.first.getName() + ".log"));
+        uris.add(Uri.parse("content://ru.oig.etyvpn.FileProvider/" + ldump.first.getName()));
+        uris.add(Uri.parse("content://ru.oig.etyvpn.FileProvider/" + ldump.first.getName() + ".log"));
 
         emailIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
         emailIntent.putParcelableArrayListExtra(Intent.EXTRA_STREAM, uris);

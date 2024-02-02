@@ -3,7 +3,7 @@
  * Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
  */
 
-package de.blinkt.openvpn.views;
+package ru.oig.etyvpn.views;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -11,7 +11,7 @@ import android.util.AttributeSet;
 import androidx.core.content.res.TypedArrayUtils;
 import androidx.preference.DialogPreference;
 
-import de.blinkt.openvpn.R;
+import ru.oig.etyvpn.R;
 
 public class RemoteCNPreference extends DialogPreference {
 

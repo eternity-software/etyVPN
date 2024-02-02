@@ -1,5 +1,5 @@
-import de.blinkt.openvpn.VpnProfile
-import de.blinkt.openvpn.fragments.Utils
+import ru.oig.etyvpn.VpnProfile
+import ru.oig.etyvpn.fragments.Utils
 import org.junit.Assert
 import org.junit.Test
 
