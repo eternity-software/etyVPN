@@ -12,6 +12,8 @@ import java.net.Inet6Address;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
+import ru.oig.etyvpn.core.NetworkSpace;
+
 /**
  * Created by arne on 23.07.16.
  */

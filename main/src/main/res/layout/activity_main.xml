@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright (c) 2012-2024 Arne Schwabe
+  ~ Copyright (c) 2012-2024 eternity software
   ~ Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
   -->
 
@@ -9,6 +9,148 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.MainActivity">
+    android:background="@color/light_gray"
+    tools:context=".ui.activities.MainActivity">
 
+    <WebView
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/state_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+
+        android:adjustViewBounds="true"
+        android:elevation="18dp"
+        android:src="@drawable/etyvpn_banner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_rounded_bar"
+        android:paddingHorizontal="20dp"
+        android:elevation="8dp"
+
+        android:orientation="vertical"
+        android:paddingVertical="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" >
+
+        <LinearLayout
+            android:id="@+id/country_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/round_stroke">
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                app:cardCornerRadius="100dp"
+                android:layout_margin="16dp"
+                app:cardElevation="2dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/country_flag"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/etyvpn_banner"
+                    />
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/server_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+
+                    android:text="@string/select_server"
+                    android:fontFamily="@font/helvetica_bold"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/server_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:textColor="@color/accent"
+                    android:text=".."
+                    android:fontFamily="@font/helvetica_bold"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/button_connect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:background="@drawable/button"
+            android:fontFamily="@font/helvetica_bold"
+            android:gravity="center"
+            android:padding="14dp"
+            android:textSize="16sp"
+            android:text="@string/loading"
+            android:textColor="@android:color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@drawable/openvpn"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/helvetica_bold"
+                android:text="@string/based_on"
+                android:layout_weight="1"
+                android:layout_marginLeft="4dp"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:fontFamily="@font/helvetica_bold"
+                android:text="@string/about_etyvpn"
+                android:background="?selectableItemBackground"
+                android:layout_marginLeft="12dp"
+                android:textColor="@color/accent"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

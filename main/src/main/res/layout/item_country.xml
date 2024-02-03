@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2012-2024 eternity software
+  ~ Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_marginVertical="4dp"
+    android:layout_marginHorizontal="4dp"
+    android:background="@drawable/round_white_button"
+    android:gravity="center_vertical"
+  >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        app:cardCornerRadius="100dp"
+        android:layout_margin="16dp"
+        app:cardElevation="2dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageViewCountryFlag"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/etyvpn_banner"
+            />
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/textViewCountryName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_weight="1"
+        android:text="Example country"
+        android:fontFamily="@font/helvetica_bold"
+        android:textSize="16sp" />
+    <TextView
+
+        android:id="@+id/text_avail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
+        android:textColor="@color/accent"
+        android:text="@string/server_unavailable"
+        android:fontFamily="@font/helvetica_bold"
+        android:textSize="14sp"
+       />
+
+</LinearLayout>

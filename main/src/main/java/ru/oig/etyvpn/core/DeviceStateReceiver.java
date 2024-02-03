@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2012-2016 Arne Schwabe
+ * Copyright (c) 2012-2024 eternity software
  * Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
  */
 
@@ -19,8 +19,6 @@ import ru.oig.etyvpn.R;
 import ru.oig.etyvpn.core.VpnStatus.ByteCountListener;
 
 import java.util.LinkedList;
-
-import static ru.oig.etyvpn.core.OpenVPNManagement.pauseReason;
 
 public class DeviceStateReceiver extends BroadcastReceiver implements ByteCountListener, OpenVPNManagement.PausedStateCallback {
     private final Handler mDisconnectHandler;
@@ -275,17 +273,17 @@ public class DeviceStateReceiver extends BroadcastReceiver implements ByteCountL
                 network == connectState.SHOULDBECONNECTED);
     }
 
-    private pauseReason getPauseReason() {
+    private OpenVPNManagement.pauseReason getPauseReason() {
         if (userpause == connectState.DISCONNECTED)
-            return pauseReason.userPause;
+            return OpenVPNManagement.pauseReason.userPause;
 
         if (screen == connectState.DISCONNECTED)
-            return pauseReason.screenOff;
+            return OpenVPNManagement.pauseReason.screenOff;
 
         if (network == connectState.DISCONNECTED)
-            return pauseReason.noNetwork;
+            return OpenVPNManagement.pauseReason.noNetwork;
 
-        return pauseReason.userPause;
+        return OpenVPNManagement.pauseReason.userPause;
     }
 
     private NetworkInfo getCurrentNetworkInfo(Context context) {

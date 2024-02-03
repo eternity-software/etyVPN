@@ -32,4 +32,22 @@
     <string name="resumevpn">Возобновить</string>
     <string name="notifcation_title">etyVPN запущен</string>
     <string name="building_configration">Создание конфигурации…</string>
+    <string name="reconnect">Переподключиться</string>
+    <string name="title_cancel">Отключить etyVPN</string>
+    <string name="cancel_connection_query">Вы хотите отключиться от сервера etyVPN?</string>
+
+    <!-- etyVPN -->
+    <string name="before_we_start">Перед началом</string>
+    <string name="exit_app">Выйти (Отклонить)</string>
+    <string name="accept">Принять политику</string>
+    <string name="connect_country">Подключиться к %s</string>
+    <string name="based_on">Основано на OpenVPN</string>
+    <string name="about_etyvpn">О etyVPN</string>
+    <string name="server_available">Доступен</string>
+    <string name="server_unavailable">Недоступен</string>
+    <string name="select_server">Выберите сервер</string>
+    <string name="disconnect_btn">Отключиться</string>
+    <string name="btn_state_waiting">Ожидаение сервера..</string>
+    <string name="btn_state_replied">Ответ сервера получен..</string>
+    <string name="btn_state_init">Подготовка...</string>
 </resources>

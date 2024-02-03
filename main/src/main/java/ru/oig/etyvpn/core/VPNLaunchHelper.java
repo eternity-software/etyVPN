@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2012-2016 Arne Schwabe
+ * Copyright (c) 2012-2024 eternity software
  * Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
  */
 
@@ -16,7 +16,6 @@ import java.io.InputStream;
 import java.util.Arrays;
 import java.util.Vector;
 
-import ru.oig.etyvpn.R;
 import ru.oig.etyvpn.VpnProfile;
 
 public class VPNLaunchHelper {

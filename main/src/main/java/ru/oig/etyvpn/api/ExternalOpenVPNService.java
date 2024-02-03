@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2012-2016 Arne Schwabe
+ * Copyright (c) 2012-2024 eternity software
  * Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
  */
 
@@ -143,7 +143,7 @@ public class ExternalOpenVPNService extends Service implements StateListener {
                 shortVPNIntent.setClass(getBaseContext(), LaunchVPN.class);
                 shortVPNIntent.putExtra(LaunchVPN.EXTRA_KEY, vp.getUUIDString());
                 shortVPNIntent.putExtra(LaunchVPN.EXTRA_HIDELOG, true);
-                shortVPNIntent.putExtra(ru.oig.etyvpn.core.OpenVPNService.EXTRA_START_REASON, startReason);
+                shortVPNIntent.putExtra(OpenVPNService.EXTRA_START_REASON, startReason);
                 shortVPNIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(shortVPNIntent);
             } else {

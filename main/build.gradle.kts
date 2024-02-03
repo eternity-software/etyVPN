@@ -233,6 +233,11 @@ android.applicationVariants.all(object : Action<ApplicationVariant> {
 
 dependencies {
     // https://maven.google.com/web/index.html
+    implementation("com.yandex.android:mobmetricalib:5.3.0")
+    implementation("com.google.android.gms:play-services-ads:22.6.0")
+    implementation ("com.google.code.gson:gson:2.8.7")
+    implementation ("com.squareup.okhttp3:okhttp:4.9.1")
+    implementation ("com.squareup.picasso:picasso:2.71828")
     implementation(libs.androidx.annotation)
     implementation(libs.androidx.core.ktx)
     implementation(libs.navigation.fragment)

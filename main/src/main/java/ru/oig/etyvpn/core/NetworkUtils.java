@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2012-2018 Arne Schwabe
+ * Copyright (c) 2012-2024 eternity software
  * Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
  */
 
@@ -13,8 +13,6 @@ import android.provider.Settings;
 import java.net.Inet4Address;
 import java.net.Inet6Address;
 import java.util.Vector;
-
-import ru.oig.etyvpn.R;
 
 public class NetworkUtils {
 

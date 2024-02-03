@@ -13,6 +13,7 @@ import org.junit.Assert
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.RobolectricTestRunner
+import ru.oig.etyvpn.core.ProfileManager
 
 interface createTestBundle
 

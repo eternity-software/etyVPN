@@ -17,6 +17,7 @@ import org.robolectric.RuntimeEnvironment;
 import org.robolectric.annotation.Config;
 
 import ru.oig.etyvpn.VpnProfile;
+import ru.oig.etyvpn.core.Connection;
 
 import static ru.oig.etyvpn.VpnProfile.AUTH_RETRY_NOINTERACT;
 import static ru.oig.etyvpn.VpnProfile.TYPE_USERPASS;

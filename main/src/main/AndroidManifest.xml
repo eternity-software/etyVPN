@@ -11,14 +11,6 @@
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
     <uses-permission android:name="android.permission.BIND_VPN_SERVICE" />
 
-    <!--
- Used to show all apps in the allowed Apps selection,
-         this app needs the list the app in the allow/deny apps over the VPN
-    -->
-    <uses-permission
-        android:name="android.permission.QUERY_ALL_PACKAGES"
-        tools:ignore="QueryAllPackagesPermission" />
-
     <application
         android:name=".core.ICSOpenVPNApplication"
         android:allowBackup="true"
@@ -29,16 +21,30 @@
         android:supportsRtl="true"
         android:theme="@style/blinkt"
         tools:ignore="UnusedAttribute">
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3502438832844506~6980442323"/>
         <activity
-            android:name=".activities.MainActivity"
+            android:name=".ui.activities.PrivacyActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.SplashScreen"
             android:exported="true"
             android:label="@string/app"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.MainActivity"
+            android:exported="true"
+            android:label="@string/app"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
         </activity>
 
         <meta-data
@@ -46,7 +52,7 @@
             android:resource="@xml/app_restrictions" />
 
         <activity
-            android:name=".activities.DisconnectVPN"
+            android:name=".ui.activities.DisconnectVPN"
             android:autoRemoveFromRecents="true"
             android:excludeFromRecents="true"
             android:noHistory="true"
@@ -142,11 +148,7 @@
             android:theme="@style/blinkt.dialog" />
 
         <activity-alias
-            android:name=".api.ConnectVPN"
-            android:exported="true"
-            android:targetActivity=".api.RemoteAction" />
-        <activity-alias
-            android:name=".api.DisconnectVPN"
+            android:name=".api.ResumeVPN"
             android:exported="true"
             android:targetActivity=".api.RemoteAction" />
         <activity-alias
@@ -154,7 +156,11 @@
             android:exported="true"
             android:targetActivity=".api.RemoteAction" />
         <activity-alias
-            android:name=".api.ResumeVPN"
+            android:name=".api.DisconnectVPN"
+            android:exported="true"
+            android:targetActivity=".api.RemoteAction" />
+        <activity-alias
+            android:name=".api.ConnectVPN"
             android:exported="true"
             android:targetActivity=".api.RemoteAction" />
     </application>

@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2012-2024 Arne Schwabe
+ * Copyright (c) 2012-2024 eternity software
  * Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
  */
 
@@ -37,6 +37,7 @@ import java.io.IOException;
 import ru.oig.etyvpn.api.ExternalAppDatabase;
 import ru.oig.etyvpn.core.ConnectionStatus;
 import ru.oig.etyvpn.core.IServiceStatus;
+import ru.oig.etyvpn.core.OpenVPNService;
 import ru.oig.etyvpn.core.OpenVPNStatusService;
 import ru.oig.etyvpn.core.PasswordCache;
 import ru.oig.etyvpn.core.Preferences;
@@ -139,7 +140,7 @@ public class LaunchVPN extends Activity {
         // we got called to be the starting point, most likely a shortcut
         String shortcutUUID = intent.getStringExtra(EXTRA_KEY);
         String shortcutName = intent.getStringExtra(EXTRA_NAME);
-        String startReason = intent.getStringExtra(EXTRA_START_REASON);
+        String startReason = intent.getStringExtra(OpenVPNService.EXTRA_START_REASON);
         mhideLog = intent.getBooleanExtra(EXTRA_HIDELOG, false);
 
         VpnProfile profileToConnect = ProfileManager.get(this, shortcutUUID);

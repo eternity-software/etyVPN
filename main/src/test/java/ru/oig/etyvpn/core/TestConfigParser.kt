@@ -14,6 +14,8 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.RobolectricTestRunner
 import org.robolectric.annotation.Config
+import ru.oig.etyvpn.core.ConfigParser
+import ru.oig.etyvpn.core.Connection
 import java.io.IOException
 import java.io.StringReader
 import java.util.*

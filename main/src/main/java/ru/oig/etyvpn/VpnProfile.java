@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2012-2024 Arne Schwabe
+ * Copyright (c) 2012-2024 eternity software
  * Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
  */
 
@@ -25,8 +25,17 @@ import androidx.annotation.Nullable;
 import android.text.TextUtils;
 import android.util.Base64;
 
-import ru.oig.etyvpn.BuildConfig;
-import ru.oig.etyvpn.core.*;
+import ru.oig.etyvpn.core.Connection;
+import ru.oig.etyvpn.core.ExtAuthHelper;
+import ru.oig.etyvpn.core.NativeUtils;
+import ru.oig.etyvpn.core.NetworkUtils;
+import ru.oig.etyvpn.core.OpenVPNManagement;
+import ru.oig.etyvpn.core.OpenVPNService;
+import ru.oig.etyvpn.core.OrbotHelper;
+import ru.oig.etyvpn.core.PasswordCache;
+import ru.oig.etyvpn.core.Preferences;
+import ru.oig.etyvpn.core.VpnStatus;
+import ru.oig.etyvpn.core.X509Utils;
 
 import org.spongycastle.util.io.pem.PemObject;
 import org.spongycastle.util.io.pem.PemWriter;
@@ -826,7 +835,7 @@ public class VpnProfile implements Serializable, Cloneable {
         if (startReason != null)
             intent.putExtra(OpenVPNService.EXTRA_START_REASON, startReason);
         if (!replace_running_vpn)
-            intent.putExtra(EXTRA_DO_NOT_REPLACE_RUNNING_VPN, true);
+            intent.putExtra(OpenVPNService.EXTRA_DO_NOT_REPLACE_RUNNING_VPN, true);
         return intent;
     }
 

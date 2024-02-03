@@ -1,12 +1,11 @@
 /*
- * Copyright (c) 2012-2016 Arne Schwabe
+ * Copyright (c) 2012-2024 eternity software
  * Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
  */
 
 package ru.oig.etyvpn.api;
 
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.content.pm.ApplicationInfo;
@@ -19,8 +18,6 @@ import java.util.Set;
 
 import ru.oig.etyvpn.core.Preferences;
 import ru.oig.etyvpn.core.VpnStatus;
-
-import static android.content.Intent.FLAG_ACTIVITY_NEW_TASK;
 
 public class ExternalAppDatabase {
 

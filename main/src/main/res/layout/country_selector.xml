@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2012-2024 eternity software
+  ~ Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/top_rounded_bar"
+    android:padding="20dp"
+    android:backgroundTint="@color/light_gray"
+    android:layout_height="400dp">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_height="match_parent"/>
+</LinearLayout>

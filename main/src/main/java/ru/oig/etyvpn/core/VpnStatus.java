@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2012-2016 Arne Schwabe
+ * Copyright (c) 2012-2024 eternity software
  * Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
  */
 
@@ -400,7 +400,15 @@ public class VpnStatus {
 
 
         for (StateListener sl : stateListener) {
-            sl.updateState(state, msg, resid, level, intent);
+            try
+            {
+
+                sl.updateState(state, msg, resid, level, intent);
+            }
+            catch (Exception e)
+            {
+                e.printStackTrace();
+            }
         }
         //newLogItem(new LogItem((LogLevel.DEBUG), String.format("New OpenVPN Status (%s->%s): %s",state,level.toString(),msg)));
     }

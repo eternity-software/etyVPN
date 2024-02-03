@@ -20,6 +20,10 @@ import java.io.OutputStream;
 import java.io.UnsupportedEncodingException;
 import java.util.Arrays;
 
+import ru.oig.etyvpn.core.LogFileHandler;
+import ru.oig.etyvpn.core.LogItem;
+import ru.oig.etyvpn.core.VpnStatus;
+
 public class TestLogFileHandler {
 
     byte[] testUnescaped = new byte[]{0x00, 0x55, -27, 0x00, 0x56, 0x10, -128, 0x55, 0x54};

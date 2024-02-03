@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background Color -->
+    <item
+        android:drawable="@color/accent"/>
+
+    <!-- Logo -->
+    <item android:drawable="@drawable/etyvpn_logo"
+
+        android:gravity="center_vertical|center_horizontal"/>
+
+    <item
+
+        android:drawable="@drawable/ic_info_logo"
+        android:bottom="30dp"
+        android:gravity="bottom|center_horizontal"/>
+
+
+</layer-list>

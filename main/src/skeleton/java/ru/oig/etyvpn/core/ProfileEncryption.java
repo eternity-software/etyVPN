@@ -14,22 +14,22 @@ import java.io.IOException;
 import java.security.GeneralSecurityException;
 
 /* Dummy class that supports no encryption */
-class ProfileEncryption {
-    static void initMasterCryptAlias(Context context)
+public class ProfileEncryption {
+    public static void initMasterCryptAlias(Context context)
     {
 
     }
 
-    static boolean encryptionEnabled()
+    public static boolean encryptionEnabled()
     {
         return false;
     }
 
-    static FileInputStream getEncryptedVpInput(Context context, File file) throws GeneralSecurityException, IOException {
+    public static FileInputStream getEncryptedVpInput(Context context, File file) throws GeneralSecurityException, IOException {
         throw new GeneralSecurityException("encryption of file not supported in this build");
     }
 
-    static FileOutputStream getEncryptedVpOutput(Context context, File file) throws GeneralSecurityException, IOException {
+    public static FileOutputStream getEncryptedVpOutput(Context context, File file) throws GeneralSecurityException, IOException {
         throw new GeneralSecurityException("encryption of file not supported in this build");
     }
 
