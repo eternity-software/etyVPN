@@ -50,4 +50,16 @@
     <string name="btn_state_waiting">Ожидаение сервера..</string>
     <string name="btn_state_replied">Ответ сервера получен..</string>
     <string name="btn_state_init">Подготовка...</string>
+
+    <string name="not_avail_title">etyVPN отдыхает</string>
+    <string name="not_avail_text">Мы проводим технические работы чтобы улучшить качество etyVPN</string>
+
+    <string name="about_app">О приложении</string>
+    <string name="developed_by">Разработчик </string>
+    <string name="info_dev">Этот прокет с открытым исходным кодом, основанный на OpenVPN</string>
+    <string name="privacy_policy_text">Политика Конфиденциальности</string>
+
+    <string name="update_required_title">Ваше приложение устарело</string>
+    <string name="update_required_text">Пожалуйста, обновите приложения чтобы получить доступ к серверам</string>
+    <string name="servers_disclaimer">Cервера сообщества (Community) могут быть недоступны из-за высокой нагрузки.</string>
 </resources>

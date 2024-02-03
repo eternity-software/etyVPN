@@ -8,7 +8,6 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
     <uses-permission android:name="android.permission.BIND_VPN_SERVICE" />
 
     <application
@@ -21,13 +20,19 @@
         android:supportsRtl="true"
         android:theme="@style/blinkt"
         tools:ignore="UnusedAttribute">
-        <meta-data
-            android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-3502438832844506~6980442323"/>
         <activity
-            android:name=".ui.activities.PrivacyActivity"
+            android:name=".ui.activities.AboutActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3502438832844506~6980442323" />
+
+        <activity
+            android:name=".ui.activities.PrivacyActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".ui.activities.SplashScreen"
             android:exported="true"
@@ -43,9 +48,7 @@
             android:name=".ui.activities.MainActivity"
             android:exported="true"
             android:label="@string/app"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-
-        </activity>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
 
         <meta-data
             android:name="android.content.APP_RESTRICTIONS"
@@ -148,11 +151,7 @@
             android:theme="@style/blinkt.dialog" />
 
         <activity-alias
-            android:name=".api.ResumeVPN"
-            android:exported="true"
-            android:targetActivity=".api.RemoteAction" />
-        <activity-alias
-            android:name=".api.PauseVPN"
+            android:name=".api.ConnectVPN"
             android:exported="true"
             android:targetActivity=".api.RemoteAction" />
         <activity-alias
@@ -160,7 +159,11 @@
             android:exported="true"
             android:targetActivity=".api.RemoteAction" />
         <activity-alias
-            android:name=".api.ConnectVPN"
+            android:name=".api.PauseVPN"
+            android:exported="true"
+            android:targetActivity=".api.RemoteAction" />
+        <activity-alias
+            android:name=".api.ResumeVPN"
             android:exported="true"
             android:targetActivity=".api.RemoteAction" />
     </application>

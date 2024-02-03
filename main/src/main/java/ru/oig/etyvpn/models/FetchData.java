@@ -5,6 +5,7 @@
 
 package ru.oig.etyvpn.models;
 
+import android.net.TrafficStats;
 import android.util.Log;
 
 import com.google.gson.Gson;
@@ -22,7 +23,7 @@ public class FetchData {
     public static AppData fetchData() {
         OkHttpClient client = new OkHttpClient();
         Request request = new Request.Builder().url("https://etysoft.ru/vpn/config.json").build();
-
+        TrafficStats.setThreadStatsTag(1234);
         try {
             Response response = client.newCall(request).execute();
 
@@ -41,6 +42,7 @@ public class FetchData {
 
     public static String getConfig(String url)
     {
+        TrafficStats.setThreadStatsTag(12345);
         OkHttpClient client = new OkHttpClient();
         Request request = new Request.Builder().url(url).build();
 

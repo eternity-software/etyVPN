@@ -44,6 +44,7 @@ import ru.oig.etyvpn.models.AppData;
 import ru.oig.etyvpn.models.FetchData;
 import ru.oig.etyvpn.models.etyVPNCountry;
 import ru.oig.etyvpn.models.etyVPNServer;
+import ru.oig.etyvpn.ui.NonCancelableDialog;
 import ru.oig.etyvpn.ui.sheets.ServerSelectorBottomSheet;
 import ru.oig.etyvpn.ui.sheets.ServerSelectorCallback;
 
@@ -123,6 +124,10 @@ public class MainActivity extends AppCompatActivity implements Handler.Callback,
         webView.setWebViewClient(new WebViewClient());
         webView.loadUrl("https://etysoft.ru/redirect.php?region=" + Locale.getDefault().getLanguage());
 
+        findViewById(R.id.button_about).setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, AboutActivity.class);
+            startActivity(intent);
+        });
 
         findViewById(R.id.button_connect).setOnClickListener(v -> {
 
@@ -162,13 +167,14 @@ public class MainActivity extends AppCompatActivity implements Handler.Callback,
                 ((TextView) v).setText(getString(R.string.btn_state_init));
                 Thread thread = new Thread(() -> {
                     try {
+                        Thread.sleep(2000);
                         config = FetchData.getConfig(server.getConfigUrl());
                         runOnUiThread(() -> {
                             try {
-                                System.out.println("conf " + server.getConfigUrl() + config);
+
                                 YandexMetrica.reportEvent("VpnConnectionAttempt");
                                 mService.startVPN(config);
-                            } catch (RemoteException e) {
+                            } catch (Exception e) {
                                 e.printStackTrace();
                                 runOnUiThread(() -> {
                                     v.setEnabled(true);
@@ -222,8 +228,27 @@ public class MainActivity extends AppCompatActivity implements Handler.Callback,
                         public void run() {
                             if (appData != null) {
                                 // Handle loaded data
-                                Log.d("Data Loaded", appData.toString());
-                                displayServer();
+
+                                if(!appData.isActive())
+                                {
+                                    NonCancelableDialog nonCancelableDialog = new NonCancelableDialog(MainActivity.this,
+                                            getString(R.string.not_avail_title), getString(R.string.not_avail_text));
+
+                                }
+                                else
+                                {
+                                    if(appData.getLastVersion() > BuildConfig.VERSION_CODE)
+                                    {
+                                        NonCancelableDialog nonCancelableDialog = new NonCancelableDialog(MainActivity.this,
+                                                getString(R.string.update_required_title), getString(R.string.update_required_text) + ": " + appData.getUpdateBannerText());
+
+                                        return;
+                                    }
+                                    Log.d("Data Loaded", appData.toString());
+                                    displayServer();
+                                }
+
+
 
                             } else {
                                 // Handle data loading error
@@ -256,7 +281,14 @@ public class MainActivity extends AppCompatActivity implements Handler.Callback,
 
 
     private void unbindService() {
-        unbindService(mConnection);
+        try {
+
+            unbindService(mConnection);
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
     }
 
     @Override
@@ -338,7 +370,7 @@ public class MainActivity extends AppCompatActivity implements Handler.Callback,
         TextView name = findViewById(R.id.server_name);
         TextView status = findViewById(R.id.server_status);
         TextView button = findViewById(R.id.button_connect);
-        if (server == null) {
+        if (server == null || appData == null) {
             name.setText(getString(R.string.select_server));
             button.setText(getString(R.string.select_server));
             button.setEnabled(false);

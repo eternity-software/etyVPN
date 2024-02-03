@@ -1,0 +1,72 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "ru.oig.etyvpn",
+  "variantName": "skeletonOvpn2Release",
+  "elements": [
+    {
+      "type": "UNIVERSAL",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 206,
+      "versionName": "0.7.51-o2",
+      "outputFile": "main-skeleton-ovpn2-universal-release.apk"
+    },
+    {
+      "type": "ONE_OF_MANY",
+      "filters": [
+        {
+          "filterType": "ABI",
+          "value": "x86"
+        }
+      ],
+      "attributes": [],
+      "versionCode": 206,
+      "versionName": "0.7.51-o2",
+      "outputFile": "main-skeleton-ovpn2-x86-release.apk"
+    },
+    {
+      "type": "ONE_OF_MANY",
+      "filters": [
+        {
+          "filterType": "ABI",
+          "value": "arm64-v8a"
+        }
+      ],
+      "attributes": [],
+      "versionCode": 206,
+      "versionName": "0.7.51-o2",
+      "outputFile": "main-skeleton-ovpn2-arm64-v8a-release.apk"
+    },
+    {
+      "type": "ONE_OF_MANY",
+      "filters": [
+        {
+          "filterType": "ABI",
+          "value": "x86_64"
+        }
+      ],
+      "attributes": [],
+      "versionCode": 206,
+      "versionName": "0.7.51-o2",
+      "outputFile": "main-skeleton-ovpn2-x86_64-release.apk"
+    },
+    {
+      "type": "ONE_OF_MANY",
+      "filters": [
+        {
+          "filterType": "ABI",
+          "value": "armeabi-v7a"
+        }
+      ],
+      "attributes": [],
+      "versionCode": 206,
+      "versionName": "0.7.51-o2",
+      "outputFile": "main-skeleton-ovpn2-armeabi-v7a-release.apk"
+    }
+  ],
+  "elementType": "File"
+}

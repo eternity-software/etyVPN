@@ -533,5 +533,15 @@
     <string name="btn_state_replied">Server replied..</string>
     <string name="btn_state_init">Initializing...</string>
 
+    <string name="about_app">About app</string>
+    <string name="developed_by">Developed by </string>
+    <string name="info_dev">This project is open source. And based on OpenVPN protocol and source codes.</string>
+    <string name="privacy_policy_text">Privacy Policy</string>
 
+    <string name="not_avail_title">etyVPN is busy :)</string>
+    <string name="not_avail_text">We are doing some work to improve quality of etyVPN</string>
+
+    <string name="update_required_title">Your app is outdated</string>
+    <string name="update_required_text">Please update to last version of etyVPN to connect servers</string>
+    <string name="servers_disclaimer">Community servers may be unavailable due to high demand</string>
 </resources>

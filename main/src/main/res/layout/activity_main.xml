@@ -25,6 +25,7 @@
         android:id="@+id/state_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:visibility="gone"
         android:text="TextView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -142,6 +143,7 @@
                 android:textSize="12sp" />
 
             <TextView
+                android:id="@+id/button_about"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
