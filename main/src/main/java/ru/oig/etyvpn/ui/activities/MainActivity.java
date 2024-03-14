@@ -134,7 +134,7 @@ public class MainActivity extends AppCompatActivity implements Handler.Callback,
 
             AdRequest adRequest = new AdRequest.Builder().build();
 
-            String unitId = BuildConfig.DEBUG ? "ca-app-pub-3940256099942544/1033173712" : "ca-app-pub-3502438832844506/9134960236";
+            String unitId = BuildConfig.DEBUG ? "ca-app-pub-3940256099942544/1033173712" : "ca-app-pub-3502438832844506/4820558123";
 
 
             InterstitialAd.load(this, unitId, adRequest,
